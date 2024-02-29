@@ -83,10 +83,14 @@ header {
 	margin-bottom: .3rem;
 }
 
-
+select{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
 
 .form-element input,
-textarea {
+textarea, select {
 	background-color: var(--color-input);
 	border: none;
 	border-radius: 15px;
@@ -104,10 +108,16 @@ textarea {
 	position: relative;
 }
 
-.select-element img {
+
+
+.dropdown-icon{
+	background-image: url("./img/Expand_down.svg");
 	position: absolute;
 	right: 20px;
 	top: 30%;
+	height: 24px;
+	width: 24px;
+	pointer-events: none;
 }
 
 
